@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.game-container {
+  text-align: center;
+}
+
+#game-area {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  background-color: #e8f8f8;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.bubble {
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgba(0, 153, 255, 0.6);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.bubble:active {
+  transform: scale(0.9);
+}
